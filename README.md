@@ -19,7 +19,7 @@ Hi! I'm [Your Name], a [Your Profession] passionate about [Your Interests]. I sp
 - **Link:** [View Project](#)
 
 ### Project 2: [Project Name](#)
-- **Description:** Briefly describe your project.
+- **Description:** Briefly describe your project..
 - **Technologies:** List the technologies used.
 - **Link:** [View Project](#)
 
