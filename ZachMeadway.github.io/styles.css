@@ -1,0 +1,201 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Styles for the profile header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e2dede;
+}
+
+.profile-main-association {
+  font-size: 18px;
+  margin-top: -13px;
+  color: #757171;
+}
+
+.profile-banner {
+  color: rgb(213, 79, 56);
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.profile-header a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Change link color to black */
+}
+
+.icon{
+  width: 35px; /* adjust this value to your desired width */
+  height: 35px; /* maintain aspect ratio */
+  padding: 5px;
+}
+.resume-icon{
+  width: 50; /* adjust this value to your desired width */
+  height: 35px; /* maintain aspect ratio */
+  padding: 5px;
+}
+
+.research {
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.year-container {
+  margin-bottom: 30px;
+}
+
+.year-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styles for the cards */
+.card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+  justify-content: space-between; 
+}
+
+.card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.card-content {
+  width: calc(100% - 180px);
+  padding-left: 20px;
+  flex: 1;
+}
+
+.card-content a {
+  color: blue;
+  transition: color 0.3s ease;
+}
+
+.card-content a:hover {
+  color: darkblue;
+}
+
+.date-section {
+    margin-left: 20px;
+    color: #555;
+    font-weight: bold;
+}
+
+.project-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.members {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border-bottom: 2px solid transparent;
+}
+
+/* Change background color of buttons on hover */
+.tab-button:hover {
+  border-bottom: 2px solid #008CBA;
+}
+
+/* Create an active/current tablink class */
+.tab-button.active {
+  border-bottom: 2px solid #008CBA;
+}
+
+
+.custom-list-timeline {
+  list-style-type: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.custom-list-timeline li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.custom-list-misc li {
+    justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.emoji-timeline {
+  margin-right: 10px;
+}
+
+.text-content {
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+.date-timeline {
+  white-space: nowrap;
+  color: #555;
+  font-weight: bold;
+}
+
+.button-container{
+  padding: 0px 20px 0px 0px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Zach Meadway</title>
+    <link href="styles.css" rel="stylesheet">
+    <!-- Yes I know... sue me -->
+    <script defer src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!-- Profile section -->
+    <div class="profile-header">
+        <img alt="profile photo" class="profile-img" src="images/pp.jpg">
+        <div>
+            <h1>Zach Meadway</h1>
+            <p class="profile-main-association">Student at University of Pittsburgh at Greensburg</p>
+            <div>
+                <a href="mailto:pratt3000" title="email me!">
+                    <img class="icon" src="images/icons/gmail_logo.svg">
+                </a>
+                <a href="https://scholar.google.com/" title="Google Scholar">
+                    <img class="icon" src="images/icons/google_scholar_logo.svg">
+                </a>
+                <a href="https://github.com/" title="Github">
+                    <img class="icon" src="images/icons/github_logo.svg">
+                </a>
+                <a href="https://www.linkedin.com" title="Linkedin">
+                    <img class="icon" src="images/icons/linkedin_logo.svg">
+                </a>
+                <a href="https://drive.google.com" title="Resume">
+                    <img class="resume-icon" src="images/icons/resume.png">
+                </a>
+            </div>
+            <h4 class="profile-banner">
+                Feel free to reach out if you want to talk about anything! :)
+            </h4>
+        </div>
+    </div>
+
+    <!-- Research Interest -->
+    <div class="research">
+        <h2>Research Interests</h2>
+        <p>I like to train deep neural </p>
+        <p>Here are a few (impressive) things about me:</p>
+        <ul>
+            <!-- <li><b>50,000 USD</b> - awarded as part of the <a href = "https://new.nsf.gov/funding/initiatives/i-corps/national-teams-applicants">NSF icorps nationals</a> program where I was the technical lead in a team of 4.</li> -->
+            <li><b>llll</b> - gggg</li>
+            <li><b>llll</b> - gggg</li>
+            <li><b>llll</b> - gggg</li>
+        </ul>
+    </div>
+
+    <!-- Buttons -->
+    <div class="menu">
+        <div class="button-container">
+            <button class="tab-button" onclick="showSection('projects')">Projects</button>
+            <button class="tab-button" onclick="showSection('education')">Education</button>
+            <button class="tab-button" onclick="showSection('misc')">Misc</button>
+        </div>
+    </div>
+    <div class="content-section" id="work-experience"></div>
+    <div class="content-section" id="education"></div>
+    <div class="content-section" id="misc"></div>
+</div>
+</body>
+</html>
