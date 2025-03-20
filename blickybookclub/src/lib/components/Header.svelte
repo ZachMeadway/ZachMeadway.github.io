@@ -1,1 +1,0 @@
-<header>Blicky's Book Club</header>
