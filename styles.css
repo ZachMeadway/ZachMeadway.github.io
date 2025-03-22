@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  width: 70%;
+  width: 90%; /* Changed from 70% to be more fluid on mobile */
   max-width: 1200px;
   margin: auto;
   padding: 20px;
@@ -16,15 +16,17 @@ body {
 /* Styles for the profile header */
 .profile-header {
   display: flex;
+  flex-direction: column; /* Stack vertically on mobile */
   align-items: center;
   justify-content: center;
   padding-bottom: 15px;
   border-bottom: 1px solid #e2dede;
+  text-align: center; /* Center text on mobile */
 }
 
 .profile-main-association {
-  font-size: 18px;
-  margin-top: -13px;
+  font-size: 16px; /* Slightly smaller on mobile */
+  margin-top: 5px; /* Adjusted from negative margin */
   color: #757171;
 }
 
@@ -34,25 +36,27 @@ body {
 
 .profile-img {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 150px; /* Smaller on mobile */
+  height: 150px;
   object-fit: cover;
-  margin-right: 20px;
+  margin-right: 0; /* Remove right margin */
+  margin-bottom: 15px; /* Add bottom margin */
 }
 
 .profile-header a {
-  text-decoration: none; /* Remove underline */
-  color: black; /* Change link color to black */
+  text-decoration: none;
+  color: black;
 }
 
-.icon{
-  width: 35px; /* adjust this value to your desired width */
-  height: 35px; /* maintain aspect ratio */
+.icon {
+  width: 30px; /* Slightly smaller */
+  height: 30px;
   padding: 5px;
 }
-.resume-icon{
-  width: 50; /* adjust this value to your desired width */
-  height: 35px; /* maintain aspect ratio */
+
+.resume-icon {
+  width: 40px; /* Fixed the missing unit here */
+  height: 30px;
   padding: 5px;
 }
 
@@ -66,7 +70,7 @@ body {
 }
 
 .year-title {
-  font-size: 24px;
+  font-size: 22px;
   color: #333;
   margin-bottom: 20px;
 }
@@ -74,13 +78,13 @@ body {
 /* Styles for the cards */
 .card {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column; /* Stack vertically on mobile */
+  align-items: center; /* Center items on mobile */
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
   transition: box-shadow 0.3s ease;
-  justify-content: space-between; 
 }
 
 .card:hover {
@@ -88,15 +92,17 @@ body {
 }
 
 .card-image img {
-  width: 160px;
-  height: 160px;
+  width: 100%; /* Full width on mobile */
+  max-width: 160px;
+  height: auto; /* Maintain aspect ratio */
   border-radius: 5px;
   object-fit: cover;
+  margin-bottom: 15px; /* Add space between image and content */
 }
 
 .card-content {
-  width: calc(100% - 180px);
-  padding-left: 20px;
+  width: 100%; /* Full width on mobile */
+  padding-left: 0; /* Remove left padding */
   flex: 1;
 }
 
@@ -110,9 +116,10 @@ body {
 }
 
 .date-section {
-    margin-left: 20px;
-    color: #555;
-    font-weight: bold;
+  margin-left: 0; /* Remove left margin on mobile */
+  margin-top: 10px; /* Add top margin instead */
+  color: #555;
+  font-weight: bold;
 }
 
 .project-title {
@@ -120,6 +127,7 @@ body {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 600;
+  text-align: center; /* Center on mobile */
 }
 
 .members {
@@ -137,6 +145,7 @@ body {
 
 .menu {
   display: flex;
+  flex-wrap: wrap; /* Allow tabs to wrap on small screens */
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
 }
@@ -146,10 +155,12 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 10px 12px; /* Smaller padding on mobile */
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 15px; /* Smaller font on mobile */
   border-bottom: 2px solid transparent;
+  flex: 1; /* Equal width buttons */
+  text-align: center;
 }
 
 /* Change background color of buttons on hover */
@@ -162,7 +173,6 @@ body {
   border-bottom: 2px solid #008CBA;
 }
 
-
 .custom-list-timeline {
   list-style-type: none;
   padding-left: 0;
@@ -171,31 +181,107 @@ body {
 
 .custom-list-timeline li {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  flex-direction: column; /* Stack vertically on mobile */
+  align-items: flex-start;
+  margin-bottom: 15px;
 }
 
 .custom-list-misc li {
-    justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .emoji-timeline {
   margin-right: 10px;
+  margin-bottom: 5px; /* Add space below emoji on mobile */
 }
 
 .text-content {
   flex-grow: 1;
-  margin-right: 15px;
+  margin-right: 0; /* Remove right margin */
+  margin-bottom: 5px; /* Add space below text on mobile */
+  width: 100%; /* Full width on mobile */
 }
 
 .date-timeline {
-  white-space: nowrap;
+  white-space: normal; /* Allow wrapping */
   color: #555;
   font-weight: bold;
 }
 
-.button-container{
-  padding: 0px 20px 0px 0px;
+.button-container {
+  padding: 0;
+  margin-top: 10px; /* Add space above buttons */
+  display: flex;
+  justify-content: center; /* Center buttons on mobile */
+}
+
+/* Add media queries for responsive design */
+@media (min-width: 768px) {
+  /* Tablet and desktop styles */
+  .profile-header {
+    flex-direction: row;
+    text-align: left;
+  }
+  
+  .profile-img {
+    margin-right: 20px;
+    margin-bottom: 0;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .profile-main-association {
+    margin-top: -13px; /* Restore original spacing */
+    font-size: 18px;
+  }
+  
+  .card {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .card-image img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 0;
+  }
+  
+  .card-content {
+    width: calc(100% - 180px);
+    padding-left: 20px;
+  }
+  
+  .project-title {
+    text-align: left;
+  }
+  
+  .date-section {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+  
+  .custom-list-timeline li {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .text-content {
+    margin-right: 15px;
+  }
+  
+  .emoji-timeline {
+    margin-bottom: 0;
+  }
+  
+  .tab-button {
+    padding: 14px 16px;
+    font-size: 17px;
+  }
+  
+  .button-container {
+    padding: 0px 20px 0px 0px;
+    justify-content: flex-start;
+  }
 }
