@@ -2,68 +2,196 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Zach Meadway</title>
-    <link href="styles.css" rel="stylesheet">
-    <!-- Yes I know... sue me -->
-    <script defer src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Zach Meadway — Data Science & Machine Learning portfolio. Student at University of Pittsburgh at Greensburg exploring ML, NLP, and predictive modeling.">
+  <title>Zach Meadway</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-<div class="container">
-    <!-- Profile section -->
-    <div class="profile-header">
-        <img alt="profile photo" class="profile-img" src="images/pp1.jpg">
-        <div>
-            <h1>Zach Meadway</h1>
-            <p class="profile-main-association">Student at University of Pittsburgh at Greensburg</p>
-            <div>
-                <a href="mailto:zrm25@pitt.edu" title="email me!">
-                    <img class="icon" src="images/icons/gmail_logo.svg">
-                </a>
-                <a href="https://scholar.google.com/" title="Google Scholar">
-                    <img class="icon" src="images/icons/google_scholar_logo.svg">
-                </a>
-                <a href="https://github.com/ZachMeadway" title="Github">
-                    <img class="icon" src="images/icons/github_logo.svg">
-                </a>
-                <a href="https://www.linkedin.com/in/zachary-meadway/" title="Linkedin">
-                    <img class="icon" src="images/icons/linkedin_logo.svg">
-                </a>
-                <a href="https://drive.google.com/file/d/1U8diz_AuQOYzGqMkPJcg0V8acOu67fCm/view?usp=sharing" title="Resume">
-                    <img class="resume-icon" src="images/icons/resume.png">
-                </a>
+  <div class="layout">
+
+    <!-- ===================== SIDEBAR ===================== -->
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <img alt="Zach Meadway profile photo" class="profile-img" src="images/pp1.jpg">
+        <h1>Zach Meadway</h1>
+        <p class="profile-title">DATA ENGINEERING &amp; ANALYTICS</p>
+        <p class="profile-tagline">Transforming complex datasets into actionable tools. Specializing in predictive
+          ensemble modeling and custom data infrastructure</p>
+
+        <nav class="sidebar-nav" aria-label="Page sections">
+          <a class="nav-link active" href="#about" id="nav-about">About</a>
+          <a class="nav-link" href="#projects" id="nav-projects">Projects</a>
+          <a class="nav-link" href="#education" id="nav-education">Education</a>
+          <a class="nav-link" href="#misc" id="nav-misc">Misc</a>
+        </nav>
+      </div>
+
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="mailto:zrm25@pitt.edu" title="Email me" id="link-email">
+          <img class="icon" src="images/icons/gmail_logo.svg" alt="Email">
+        </a>
+        <a href="https://scholar.google.com/" title="Google Scholar" id="link-scholar">
+          <img class="icon" src="images/icons/google_scholar_logo.svg" alt="Google Scholar">
+        </a>
+        <a href="https://github.com/ZachMeadway" title="GitHub" id="link-github">
+          <img class="icon" src="images/icons/github_logo.svg" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/zachary-meadway/" title="LinkedIn" id="link-linkedin">
+          <img class="icon" src="images/icons/linkedin_logo.svg" alt="LinkedIn">
+        </a>
+        <a href="https://drive.google.com/file/d/1U8diz_AuQOYzGqMkPJcg0V8acOu67fCm/view?usp=sharing" title="Resume"
+          id="link-resume">
+          <img class="resume-icon" src="images/icons/resume.png" alt="Resume">
+        </a>
+      </div>
+    </aside>
+
+    <!-- ===================== MAIN CONTENT ===================== -->
+    <main class="main-content">
+
+
+
+      <!-- Projects -->
+      <section class="content-section" id="projects">
+        <h2 class="section-heading">Projects</h2>
+
+        <!-- 2025 -->
+        <div class="year-container">
+          <p class="year-title">2025</p>
+
+          <div class="card">
+            <div class="card-image">
+              <img alt="Anki flashcard project" src="images/projects/Anki-icon.png">
             </div>
-            <h4 class="profile-banner">
-                Feel free to reach out!
-            </h4>
+            <div class="card-content">
+              <p class="card-meta">Mar 2025 – Present</p>
+              <h3 class="project-title">Predicting Anki Flashcard Lapses: Analyzing Japanese Learning Data with R</h3>
+              <ul>
+                <li>Extracted, cleaned, and prepared data from Anki's SQL backend</li>
+                <li>Used R for analysis, visualization, and predictive modeling (logistic regression) to predict card
+                  lapses</li>
+                <li>Comparing logistic regression results to alternative models such as XGBoost</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">R</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Logistic Regression</span>
+                <span class="tag">XGBoost</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
 
-    <!-- Research Interest -->
-    <div class="research">
-        <h2>Research Interests</h2>
-        <p>Exploring machine learning techniques, with a focus on predictive modeling and experimenting with genetic algorithms (GAs) and novelty search</p>
-        <p></p>
-        <ul>
-            <!-- <li><b>50,000 USD</b> - awarded as part of the <a href = "https://new.nsf.gov/funding/initiatives/i-corps/national-teams-applicants">NSF icorps nationals</a> program where I was the technical lead in a team of 4.</li> -->
-            
+        <!-- 2024 -->
+        <div class="year-container">
+          <p class="year-title">2024</p>
+
+          <div class="card">
+            <div class="card-image">
+              <img alt="NLP project" src="images/projects/wanderer.jpeg">
+            </div>
+            <div class="card-content">
+              <p class="card-meta">Nov 2024 – Dec 2024</p>
+              <h3 class="project-title">Exploring NLP Basics with NLTK and Stanford GloVe</h3>
+              <ul>
+                <li>Used NLTK and Stanford GloVe to build an understanding of Natural Language Processing (NLP)</li>
+                <li>Trained a text generation model on Friedrich Nietzsche's works from the Gutenberg Press</li>
+                <li>Generated Nietzsche-style sentences based on user-provided input</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">NLTK</span>
+                <span class="tag">GloVe</span>
+                <span class="tag">NLP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="content-section" id="education">
+        <h2 class="section-heading">Education</h2>
+
+        <div class="card">
+          <div class="card-image">
+            <img alt="University of Pittsburgh logo" src="images/logos/University-of-Pittsburgh-Emblem.png">
+          </div>
+          <div class="card-content">
+            <p class="card-meta">2024 – 2026</p>
+            <h3 class="project-title">University of Pittsburgh at Greensburg</h3>
+            <p class="coursework-label">Relevant Coursework</p>
+            <div class="coursework-grid">
+              <span class="course-item">STAT 1261 — Data Science</span>
+              <span class="course-item">STAT 1221 — Applied Regression</span>
+              <span class="course-item">INFSCI 1128 — Data Visualization</span>
+              <span class="course-item">INFSCI 1022 — Database Management</span>
+              <span class="course-item">STAT 1000 — Applied Statistical Methods</span>
+              <span class="course-item">MATH 0400 — Finite Mathematics</span>
+              <span class="course-item">MATH 0280 — Linear Algebra</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MOOCs -->
+        <div class="year-container" style="margin-top: 32px;">
+          <p class="year-title">MOOCs &amp; Certifications</p>
+          <ul class="mooc-list">
+            <li class="mooc-item">
+              <span class="mooc-emoji">📚</span>
+              Google Data Analytics Professional Certificate
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Misc -->
+      <section class="content-section" id="misc">
+        <h2 class="section-heading">Misc</h2>
+        <ul class="misc-list">
+          <li>
+            <span class="misc-emoji">🇯🇵</span>
+            I enjoy language learning! 三年くらい前から日本語を習いはじめました！
+          </li>
+          <li>
+            <span class="misc-emoji">📺</span>
+            The only social media I enjoy is YouTube. Some of the people I like are
+            <a href="https://www.youtube.com/@michaelmackelvie">Michael Mackelvie</a>,
+            <a href="https://www.youtube.com/@magmidt/videos">Magnus Midtbø</a>,
+            <a href="https://www.youtube.com/@GoodMythicalMorning">Good Mythical Morning</a>,
+            <a href="https://www.youtube.com/@numberphile">Numberphile</a>, and
+            <a href="https://www.youtube.com/@ludwig">Ludwig</a>.
+          </li>
+          <li>
+            <span class="misc-emoji">🧗</span>
+            Some of my favorite activities are bouldering, skiing, backpacking, soccer, and pickleball.
+          </li>
+          <li>
+            <span class="misc-emoji">📖</span>
+            I do a monthly book club with my friends. Our favorites so far: <em>Into Thin Air</em> by Jon Krakauer and
+            <em>To a God Unknown</em> by John Steinbeck.
+          </li>
+          <li>
+            <span class="misc-emoji">🎮</span>
+            I love video games — currently enjoying early 2000s GameCube classics like <em>The Legend of Zelda: The Wind
+              Waker</em> and <em>Super Mario Sunshine</em>.
+          </li>
         </ul>
-    </div>
+      </section>
 
-    <!-- Buttons -->
-    <div class="menu">
-        <div class="button-container">
-            <button class="tab-button" onclick="showSection('projects')">Projects</button>
-            <button class="tab-button" onclick="showSection('education')">Education</button>
-            <button class="tab-button" onclick="showSection('misc')">Misc</button>
-        </div>
-    </div>
-    <div class="content-section" id="projects"></div>
-    <div class="content-section" id="education"></div>
-    <div class="content-section" id="misc"></div>
-</div>
+    </main>
+  </div>
 </body>
+
 </html>
